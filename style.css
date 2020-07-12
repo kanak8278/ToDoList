@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(120deg, #f0d98f, #dd8888);
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.5rem;
+    /* align-content: center; */
+}
+
+header, form{
+    min-height: 20vh;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    background: aliceblue;
+}
+
+form button{
+    color: #dd8888;
+    background: whitesmoke;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+form button:hover{
+    color: whitesmoke;
+    background: #dd8888;
+}
+
+.todo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.todo-list{
+    list-style: none;
+    min-width: 30%;
+}
+
+.todo{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    
+    
+    /* padding: 10px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.todo-item{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    background: cornsilk;
+    color: black;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+.compbtn, .delbtn{
+    /* background: #79ebff; */
+    color: rgb(50, 98, 255);
+    margin: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    font-size: 2rem;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+    
+}
+
+.completed{
+    opacity: 0.5 ;
+}
